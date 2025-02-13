@@ -73,6 +73,7 @@
     <Compile Include="Assets\ThirdParty\_BowAndArrow\Scripts\Crate.cs" />
     <Compile Include="Assets\Samples\Meta MR Utility Kit\72.0.0\Virtual Home\scripts\BiggestAnchorPrefabSpawner.cs" />
     <Compile Include="Assets\ThirdParty\_BowAndArrow\Scripts\Target\Damageable.cs" />
+    <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\ThirdParty\_BowAndArrow\Scripts\OculusInput.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1316,10 +1317,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Oculus.Interaction.Editor">
-      <HintPath>Library\ScriptAssemblies\Oculus.Interaction.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Oculus.Platform">
       <HintPath>Library\ScriptAssemblies\Oculus.Platform.dll</HintPath>
       <Private>False</Private>
@@ -1426,6 +1423,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Oculus.Interaction.Editor.csproj">
+      <Project>{65B5E4DC-B3F5-FA33-F51A-EF234F3864D1}</Project>
+      <Name>Oculus.Interaction.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
